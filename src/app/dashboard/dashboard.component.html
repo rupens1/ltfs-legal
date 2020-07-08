@@ -11,59 +11,60 @@
               </div>
             </div>
             <div class="contentBlock">
-              <form (submit)="submitData()">
-              <div class="formBlock">
-                <div class="inputBox">
-                  <select name="username" id="username" required autoComplete="off" >
-                    <option selected disabled hidden>Products </option>
-                    <option value="First value">Farm Loans</option>
-                    <option value="Second value">Two Wheeler</option>
-                    <option value="Third value">Home Loans</option>
-                  </select>
-                  <span class="noteMsg">Select Products</span>
-                  <span class="d-none errorMsg">Select Products</span>
+              <form (submit)="submitData()" [formGroup]="dashboardForm">
+                <div class="formBlock">
+                  <div class="inputBox">
+                    <select formControlName="products" id="products" required autoComplete="off">
+                      <option selected disabled hidden>Products </option>
+                      <option value="HOMELOAN">HOME LOAN </option>
+                      <option value="TWOWHEELER">TWO WHEELER </option>
+                      <option value="FARMLOAN">FARM LOAN</option>
+                    </select>
+                    <span class="noteMsg">Select Products</span>
+                    <span class="d-none errorMsg">Select Products</span>
+                  </div>
+                  <div class="inputBox">
+                    <select formControlName="typeOfLetter" id="typeOfLetter" required autoComplete="off">
+                      <option selected disabled hidden>Types of Letter</option>
+                      <option value="SOFT_DUNNING">Soft Dunning</option>
+                      <option value="HARD_DUNNING">Hard Dunning</option>
+                      <option value="LRN">LRN Notice</option>
+                      <option value="DUNNING">Dunning Notice</option>
+                    </select>
+                    <span class="noteMsg">Select Types of Letter</span>
+                    <span class="d-none errorMsg">Select Types of Letter</span>
+                  </div>
+                  <div class="inputBox">
+                    <select name="category" id="category" required autoComplete="off">
+                      <option selected disabled hidden>Category</option>
+                      <option value="one_br">One BR</option>
+                      <option value="one_br_gr">One BR + One GR</option>
+                      <option value="one_br_cbr_gr">One BR + One CBR + One GR</option>
+                    </select>
+                    <span class="noteMsg">Select Category</span>
+                    <span class="d-none errorMsg">Select Category</span>
+                  </div>
+                  <div class="inputBox">
+                    <select name="" id="" required autoComplete="off">
+                      <option selected disabled hidden>Communication Type</option>
+                      <option value="sms">SMS</option>
+                      <option value="email">Email</option>
+                      <option value="whatsapp">WhatsApp</option>
+                    </select>
+                    <span class="noteMsg">Select Communication Type</span>
+                    <span class="d-none errorMsg">Select Communication Type</span>
+                  </div>
+                  <div class="inputBox fileGroup">
+                    <label for="csvFile">Upload Excel File</label>
+                    <input type="file" name="csvFile" id="csvFile" required autoComplete="off"
+                      accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                    <span class="d-none errorMsg">Please upload Excel File</span>
+                  </div>
+                  <div class="btnWrap">
+                    <button type="submit" class="blue-btn">Submit</button>
+                  </div>
                 </div>
-                <div class="inputBox">
-                  <select name="username" id="username" required autoComplete="off" >
-                    <option selected disabled hidden>Types of Letter</option>
-                    <option value="First value">Soft Dunning</option>
-                    <option value="Second value">Hard Dunning</option>
-                    <option value="Third value">LRN Notice</option>
-                    <option value="Fourth value">Dunning Notice</option>
-                  </select>
-                  <span class="noteMsg">Select Types of Letter</span>
-                  <span class="d-none errorMsg">Select Types of Letter</span>
-                </div>
-                <div class="inputBox">
-                  <select name="username" id="username" required autoComplete="off" >
-                    <option selected disabled hidden>Category</option>
-                    <option value="First value">One BR</option>
-                    <option value="Second value">One BR + One GR</option>
-                    <option value="Third value">One BR + One CBR + One GR</option>
-                  </select>
-                  <span class="noteMsg">Select Category</span>
-                  <span class="d-none errorMsg">Select Category</span>
-                </div>
-                <div class="inputBox">
-                  <select name="username" id="username" required autoComplete="off" >
-                    <option selected disabled hidden>Communication Type</option>
-                    <option value="First value">SMS</option>
-                    <option value="Second value">Email</option>
-                    <option value="Third value">WhatsApp</option>
-                  </select>
-                  <span class="noteMsg">Select Communication Type</span>
-                  <span class="d-none errorMsg">Select Communication Type</span>
-                </div>
-                <div class="inputBox fileGroup">
-                  <label for="csvFile">Upload Excel File</label>
-                  <input type="file" name="csvFile" id="csvFile" required autoComplete="off" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
-                  <span class="d-none errorMsg">Please upload Excel File</span>
-                </div>
-                <div class="btnWrap">
-                  <button type="submit" class="blue-btn">Submit</button>
-                </div>
-              </div>
-            </form>
+              </form>
             </div>
           </div>
         </div>

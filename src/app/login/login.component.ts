@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
     const payload = {
       ...this.loginForm.value,
-      reqId: '1234'
+      reqId: Math.floor(1000 + Math.random()*9000)
     }
 
     const requestOpt = {
