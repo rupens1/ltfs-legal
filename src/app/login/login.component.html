@@ -1,0 +1,44 @@
+<div class="login">
+  <div class="overlay"></div>
+  <div id="mainContentWrap" role="main" class="pageWrapper">
+    <div class="d-none loaderWrapper">
+      <div class="loader"><img src="" data-src="assets/images/loader.gif" class="lazy" /></div>
+    </div>
+    <section class="loginWrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shadowDiv clearfix">
+              <div class="imgBlock">
+                <div class="imgContent"><img src="assets/images/ltfs-logo.svg" class="showImg" />
+                  <h2>Customer Service</h2>
+                  <p>Login to view your loans with L&T</p>
+                </div>
+              </div>
+              <div class="contentBlock">
+                <form (submit)="login()" [formGroup]="loginForm">
+                  <div class="formBlock">
+                    <div class="inputBox">
+                      <input type="text" formControlName="psNo" maxlength="12" id="psNo" required autoComplete="off" />
+                      <label for="psNo">Enter psNo</label>
+                      <span *ngIf="loginForm.get('psNo').invalid && (loginForm.get('psNo').dirty || loginForm.get('psNo').touched)" class="errorMsg">Invalid psNo</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" formControlName="password" id="password" required autoComplete="off" />
+                      <label for="password">Enter Password</label>
+                      <span *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)" class="errorMsg">Invalid Password</span>
+                    </div>
+                    <div class="btnWrap">
+                      <button type="submit" class="blue-btn">Submit</button>
+                    </div>
+                  </div>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

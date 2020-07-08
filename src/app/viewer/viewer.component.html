@@ -1,0 +1,59 @@
+<div id="mainContentWrap" role="main" class="pageWrapper">
+  <section class="viewerWrapper">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="search-group">
+            <div>
+              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <button type="button" class="blue-btn btn-sm">Submit</button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">BATCH ID</th>
+                <th scope="col">BATCH PRODUCT</th>
+                <th scope="col">BATCH UPLOADED_BY</th>
+                <th scope="col">BATCH UPLOADED_NAME</th>
+                <th scope="col">BATCH UPLOADED_DATE</th>
+                <th scope="col">APPROVED BY</th>
+                <th scope="col">REJECTED BY</th>
+                <th scope="col">DOWNLOAD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of viewerDataStore.viewerData$ | async">
+                <td scope="row">
+                  <a [routerLink]="['product-details', item.batchId]">{{item.batchId}}</a>
+                </td>
+                <td scope="row">{{item.batchProduct}}</td>
+                <td scope="row">{{item.batchUploadedBy}}</td>
+                <td scope="row">{{item.batchUploadedBy}}</td>
+                <td scope="row">{{item.batchUploadedDate | date: 'MM/dd/yyyy'}}</td>
+                <td scope="row">{{item.approvedBy}}</td>
+                <td scope="row">{{item.rejectedBy}}</td>
+                <td scope="row">{{item.link}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav>
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,59 @@
+.menu-group {
+  background-color: #fff;
+  border-radius: unset;
+}
+.menu {
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: bold;
+  font-family: "OpenSans-Semibold";
+}
+
+.menu-item {
+  color: #15b7f5;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.align-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-header {
+  display: flex;
+  
+  a {
+    color: #000;
+  }
+
+  .login-details {
+    border-right: 1px solid;
+    height: 19px;
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+  
+  .logout {
+  display: flex;
+  padding: 0 5px;
+
+  .logout-image {
+    height: 17px;
+    width: 17px;
+  }
+  p {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+  }
+}
+}
+
+
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

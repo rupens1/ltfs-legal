@@ -1,0 +1,46 @@
+<header>
+  <div class="mainHeader">
+    <div class="container">
+      <div class="header-group">
+        <div class="topHeader align-content">
+          <div role="menubar" class="hamburgerPanel">
+            <a href="javascript:void(0)" class="hamburgerBox">
+              <img src="assets/images/hamburger.png" alt="" class="lazy" />
+            </a>
+          </div>
+          <div class="logoPanel">
+            <a [routerLink]="['/']">
+              <img src="assets/images/logo.png" alt="L&amp;T Financial Services Logo. Press enter to go Home" />
+            </a>
+          </div>
+        </div>
+        <div *ngIf="isLoggedIn()" class="right-header">
+          <p class="login-details">Welcome Rupen</p>
+          <p class="login-details">Last Login Details: {{lastLogin | date: 'dd-mm-yyyy'}}</p>
+          <a [routerLink]="['/login']">
+            <div class="logout">
+              <img src="assets/images/logout.svg" class="logout-image" />
+              <p>logout</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="blueBar"></div>
+  <div *ngIf="isLoggedIn()" class="shadowDiv menu-group">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm menu">
+          <a [routerLink]="[getDashboardLink()]">
+            <div class="menu-item">Dashboard</div>
+          </a>
+          <a [routerLink]="[getReportLink()]">
+            <div class="menu-item">View Reports</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

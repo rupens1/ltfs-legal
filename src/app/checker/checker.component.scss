@@ -1,0 +1,35 @@
+.checkerDashboardWrapper{
+  font-size: 10px;
+}
+
+
+.search-group {
+  display: flex;
+  margin: 40px 0;
+  button {
+    font-size: 0.70rem;
+    width: 86px;
+    min-width: 80px;
+    margin-left: 24px;
+    height: 24px;
+  }
+}
+
+.table-responsive .table-bordered {
+  text-align: center;
+}
+
+.checkbox-group {
+  height: 20px;
+
+  .checkbox-label {
+    line-height: 18px;
+    padding-left: 8px;
+  }
+}
+
+.form-group {
+  textarea {
+    resize: none;
+  }
+}

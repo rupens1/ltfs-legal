@@ -1,0 +1,2399 @@
+/* colors variables start*/
+
+/* colors variables end*/
+
+/*font variables*/
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/*Reset margin, padding & border for all elements to 0*/
+
+html,
+body,
+section,
+nav,
+article,
+aside,
+header,
+footer,
+address,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr,
+pre,
+blockquote,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+figure,
+figcaption,
+div,
+legend
+form,
+fieldset,
+input,
+select,
+textarea,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+	font-family: sans-serif; /* 1 */
+	line-height: 1.4;
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct 'block' display not defined for any HTML5 element in IE 8/9.
+ * Correct 'block' display not defined for 'details' or 'summary' in IE 10/11 and Firefox.
+ * Correct 'block' display not defined for 'main' in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/**
+ * 1. Correct 'inline-block' display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying 'audio' without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Address '[hidden]' styling not present in IE 8/9/10.
+ * Hide the 'template' element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+	display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+	background: transparent;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to 'bolder' in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent 'sub' and 'sup' affecting 'line-height' in all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside 'a' element in IE 8/9/10.
+ */
+
+img {
+	border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+	overflow: auto;
+}
+
+/**
+ * Address odd 'em'-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of 'select', unless a 'border' property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/**
+ * Address 'overflow' set to 'hidden' in IE 8/9/10/11.
+ */
+
+button {
+	overflow: visible;
+}
+
+/**
+ * Address inconsistent 'text-transform' inheritance for 'button' and 'select'.
+ * All other form control elements do not inherit 'text-transform' values.
+ * Correct 'button' style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct 'select' style inheritance in Firefox.
+ */
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native 'audio'
+ *    and 'video' controls.
+ * 2. Correct inability to style clickable 'input' types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    'input' and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting 'line-height' on 'input' using '!important' in
+ * the UA stylesheet.
+ */
+
+input {
+	line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to 'content-box' in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * 'font-size' values of the 'input', it causes the cursor style of the
+ * decrement button to change from 'default' to 'text'.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Address 'appearance' set to 'searchfield' in Safari and Chrome.
+ * 2. Address 'box-sizing' set to 'border-box' in Safari and Chrome
+ *    (include '-moz' to future-proof).
+ */
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */ /* 2 */
+	box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and 'textfield' appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * Don't inherit the 'font-weight' (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+	font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers:
+ *
+ *  1. The space content is one way to avoid an Opera bug when the
+ *     `contenteditable` attribute is included anywhere else in the document.
+ *     Otherwise it causes space to appear at the top and bottom of elements
+ *     that receive the `clearfix` class.
+ *  2. The use of `table` rather than `block` is only necessary if using
+ *     `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: ' '; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+@font-face {
+	font-family: OpenSans-Semibold;
+	src: url(../font/OpenSans-Semibold.eot);
+	src: url(../font/OpenSans-Semibold.eot?#iefix) format("embedded-opentype"), url(../font/OpenSans-Semibold.woff2) format("woff2"), url(../font/OpenSans-Semibold.woff) format("woff"), url(../font/OpenSans-Semibold.ttf) format("truetype"), url(../font/OpenSans-Semibold.svg#OpenSans-Semibold) format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans-Bold;
+	src: url(../font/OpenSans-Bold.eot);
+	src: url(../font/OpenSans-Bold.eot?#iefix) format("embedded-opentype"), url(../font/OpenSans-Bold.woff2) format("woff2"), url(../font/OpenSans-Bold.woff) format("woff"), url(../font/OpenSans-Bold.ttf) format("truetype"), url(../font/OpenSans-Bold.svg#OpenSans-Bold) format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans-regular;
+	src: url(../font/OpenSans.eot);
+	src: url(../font/OpenSans.eot?#iefix) format("embedded-opentype"), url(../font/OpenSans.woff2) format("woff2"), url(../font/OpenSans.woff) format("woff"), url(../font/OpenSans.ttf) format("truetype"), url(../font/OpenSans.svg#OpenSans) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans-Light;
+	src: url(../font/OpenSans-Light.eot);
+	src: url(../font/OpenSans-Light.eot?#iefix) format("embedded-opentype"), url(../font/OpenSans-Light.woff2) format("woff2"), url(../font/OpenSans-Light.woff) format("woff"), url(../font/OpenSans-Light.ttf) format("truetype"), url(../font/OpenSans-Light.svg#OpenSans-Light) format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans-xBold;
+	src: url(../font/OpenSans-Extrabold.eot);
+	src: url(../font/OpenSans-Extrabold.eot?#iefix) format("embedded-opentype"), url(../font/OpenSans-Extrabold.woff2) format("woff2"), url(../font/OpenSans-Extrabold.woff) format("woff"), url(../font/OpenSans-Extrabold.ttf) format("truetype"), url(../font/OpenSans-Extrabold.svg#OpenSans-Extrabold) format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url("../font/icomoon.eot?zckfo3");
+	src: url("../font/icomoon.eot?zckfo3#iefix") format("embedded-opentype"), url("../font/icomoon.woff2?zckfo3") format("woff2"), url("../font/icomoon.ttf?zckfo3") format("truetype"), url("../font/icomoon.woff?zckfo3") format("woff"), url("../font/icomoon.svg?zckfo3#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] { /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1; /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1648881 .path1:before {
+	content: "\e900";
+	color: #f0bc5e;
+}
+
+.icon-1648881 .path2:before {
+	content: "\e901";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path3:before {
+	content: "\e902";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path4:before {
+	content: "\e903";
+	margin-left: -1em;
+	color: #f0bc5e;
+}
+
+.icon-1648881 .path5:before {
+	content: "\e904";
+	margin-left: -1em;
+	color: #f0bc5e;
+}
+
+.icon-1648881 .path6:before {
+	content: "\e905";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path7:before {
+	content: "\e906";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path8:before {
+	content: "\e907";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path9:before {
+	content: "\e908";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path10:before {
+	content: "\e909";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path11:before {
+	content: "\e90a";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-1648881 .path12:before {
+	content: "\e90b";
+	margin-left: -1em;
+	color: black;
+}
+
+.icon-Agency:before {
+	content: "\e90c";
+}
+
+.icon-alternate-number:before {
+	content: "\e90d";
+}
+
+.icon-Arrow:before {
+	content: "\e90e";
+}
+
+.icon-Branch:before {
+	content: "\e90f";
+}
+
+.icon-close:before {
+	content: "\e910";
+}
+
+.icon-debit:before {
+	content: "\e911";
+}
+
+.icon-Email:before {
+	content: "\e912";
+}
+
+.icon-FAQ:before {
+	content: "\e913";
+}
+
+.icon-foreclosure:before {
+	content: "\e914";
+}
+
+.icon-Home:before {
+	content: "\e915";
+}
+
+.icon-Mobile:before {
+	content: "\e916";
+}
+
+.icon-onlinepay:before {
+	content: "\e917";
+}
+
+.icon-rupee:before {
+	content: "\e918";
+}
+
+.icon-scedule:before {
+	content: "\e919";
+}
+
+.icon-welcomeletter:before {
+	content: "\e91b";
+}
+
+/*media query variables*/
+
+html,
+body {
+	font-family: "OpenSans-regular";
+	color: #000;
+	overflow-x: hidden;
+	font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: initial;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin-bottom: .7rem; /*767px*/
+}
+
+.pageWrapper {
+	padding: 14rem 0 2rem 0; /*991px*/
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #000;
+	opacity: 0.5;
+	display: none;
+}
+
+.close {
+	right: 15px;
+	top: 5px;
+	position: absolute;
+	z-index: 999;
+	font-size: 30px;
+}
+
+.modal {
+	text-align: center;
+	padding: 0 !important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.loaderWrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 99;
+}
+
+.loader {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+.inputBox {
+	position: relative;
+	width: 90%;
+	margin-top: 2.5rem;
+	text-align: left;
+	margin-bottom: 30px; /*991px*/ /*767px*/ /*575px*/
+}
+
+.inputBox input,
+.inputBox textarea,
+.inputBox select {
+	height: 50px;
+	padding: 10px;
+	padding-left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	background: #fff;
+	color: #222d39;
+	border-bottom: 1px solid #999;
+	font-family: "OpenSans-Semibold";
+	font-size: 1.6rem; /*767px*/
+}
+
+.inputBox label {
+	position: absolute;
+	top: 13px;
+	color: #9cacb7;
+	transition: .5s;
+	font-weight: 500;
+	pointer-events: none;
+	left: 0;
+	font-size: 1.6rem;
+	margin: 0;
+	font-family: "OpenSans-Semibold"; /*767px*/
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox.labelUp label {
+	top: -12px;
+	left: 0px;
+	color: #222d39;
+	font-size: 1.2rem;
+	font-family: "OpenSans-Semibold"; /*767px*/
+}
+
+.inputBox input:focus {
+	border-bottom: 1px solid #1face2;
+}
+
+.inputBox input:valid {
+	border-bottom: 1px solid #999;
+}
+
+.inputBox.error input {
+	border-bottom: 1px solid #ff0000;
+}
+
+*:-webkit-autofill,
+*:-webkit-autofill:hover,
+*:-webkit-autofill:focus,
+*:-webkit-autofill:active {
+	-webkit-text-fill-color: #fff;
+}
+
+.noteMsg {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #9cacb7;
+	position: relative;
+	display: block;
+	margin-top: 5px;
+}
+
+.errorMsg {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #ff0000;
+	position: relative;
+	display: block;
+	margin-top: 5px;
+}
+
+.blue-btn {
+	background: #00adef;
+	color: #fff;
+	font-size: 1.6rem;
+	display: inline-block;
+	cursor: pointer;
+	transition: .5s all ease;
+	padding: 0.8rem 1rem;
+	text-transform: uppercase;
+	font-family: "OpenSans-Semibold";
+	text-align: center;
+	min-width: 200px;
+	border: 0;
+	border-radius: 6px; /*767px*/
+}
+
+.blue-btn:hover,
+.blue-btn:focus,
+.blue-btn:active {
+	box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.16), 2px 2px 6px 0 rgba(0, 0, 0, 0.13), 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.interactionWrap {
+	transition: transform 200ms ease-in-out;
+}
+
+.interactionWrap.slideAnimation {
+	-ms-transform: translate(310px, 0);
+	transform: translate(310px, 0);
+}
+
+header {
+	position: fixed;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+	z-index: 99; /*991px*/
+}
+
+header .container {
+	width: 98%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.mainHeader {
+	background: #ffcb05;
+	padding: 2.1rem 0; /*991px*/
+}
+
+.mainHeader .topHeader {
+	position: relative; /*991px*/
+}
+
+.mainHeader .topHeader .hamburgerPanel {
+	float: left; /*991px*/ /*575px*/
+}
+
+.mainHeader .topHeader .hamburgerPanel .hamburgerBox {
+	position: relative;
+	display: inline-block;
+	width: 2rem;
+	height: 2.4rem;
+	cursor: pointer;
+	z-index: 1002;
+	margin: 1.0rem 1.5rem 0 0; /*991px*/ /*575px*/
+}
+
+.mainHeader .topHeader .logoPanel {
+	max-width: 19rem; /*991px*/ /*575px*/
+}
+
+.blueBar {
+	background: #00adef;
+	height: 1rem;
+	position: relative;
+	bottom: 0;
+	right: 15px;
+	z-index: 5;
+	width: 100%;
+}
+
+.blueBar:after {
+	content: '';
+	width: 2.5rem;
+	height: 1.9rem;
+	background: url(../images/headbar.png) right 0 no-repeat;
+	position: absolute;
+	right: -15px;
+}
+
+.shadowDiv {
+	border-radius: 6px;
+	-ms-box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23);
+	-o-box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23);
+	box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23);
+	width: 100%;
+}
+
+.loginWrap .shadowDiv {
+	padding: 3rem;
+	border-radius: 6px;
+	-ms-box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23);
+	-o-box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23);
+	box-shadow: 0 2px 15px rgba(129, 129, 129, 0.23); /*767px*/
+}
+
+.loginWrap .btnWrap {
+	margin-top: 7rem; /*767px*/
+}
+
+.loginWrap .otpBlock {
+	text-align: center;
+	position: relative;
+}
+
+.loginWrap .otpBlock .otplink {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	text-decoration: underline;
+	color: #00adef;
+	font-family: "OpenSans-regular"; /*767px*/
+}
+
+.loginWrap .otpBlock .btnWrap {
+	margin-top: 7rem; /*767px*/
+}
+
+.loginWrap .otpBlock h3 {
+	color: #222d39;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	margin-bottom: 2rem;
+	font-family: "OpenSans-Bold"; /*767px*/
+}
+
+.loginWrap .otpBlock p {
+	color: #222d39;
+	font-family: "OpenSans-regular";
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+	max-width: 330px;
+	margin: 0 auto; /*767px*/
+}
+
+.loginWrap .otpBlock .inputBox {
+	margin-top: 5rem;
+}
+
+.loginWrap .showImg {
+	display: none;
+}
+
+.imgBlock {
+	height: 509px;
+	background: url("../images/login_bg.png") center bottom no-repeat;
+	border-radius: 6px; /*1460px*/ /*1366px*/ /*991px*/ /*767px*/
+}
+
+.imgBlock h2 {
+	font-family: "OpenSans-regular";
+	font-size: 4rem;
+	margin-bottom: 2.3rem;
+	color: #fff; /*767px*/
+}
+
+.imgBlock p {
+	color: #fff;
+	font-size: 1.6rem; /*767px*/
+}
+
+.imgBlock .imgContent {
+	top: 133px;
+	left: 46px;
+	display: inline-block;
+	position: relative; /*991px*/
+}
+
+.imgBlock,
+.contentBlock {
+	float: left;
+	width: 50%; /*767px*/
+}
+
+.contentBlock {
+	padding: 3rem 2rem 3rem 4rem; /*991px*/
+}
+
+.login { /*767px*/
+}
+
+p.orDiv {
+	margin: 0;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	color: #222d39;
+	opacity: 0.5;
+	margin-top: 2rem; /*767px*/
+}
+
+.upperTabSection ul li {
+	display: inline-block;
+	font-size: 1.6rem;
+	padding-right: 2rem;
+}
+
+.upperTabSection ul li a {
+	text-decoration: none;
+	color: #000;
+	font-family: OpenSans-Bold;
+}
+
+.tabbingSection {
+	box-shadow: 2px 8px 7px -3px rgba(150, 150, 150, 0.23);
+	padding-bottom: 1rem;
+	margin-top: -2rem;
+}
+
+.dashboardSection .imgWrap {
+	height: 130px;
+	background-color: #98caf8;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.dashboardSection .imgBlock {
+	width: 460px;
+	height: 300px;
+	opacity: 0.55;
+	background-color: #504108;
+	border-radius: 6px;
+	max-width: 100%;
+	color: #fafafa;
+}
+
+.dashboardSection .imgBlock h2 {
+	font-family: 'RobotoMonoRegular';
+}
+
+.dashboardSection .imgBlock,
+.dashboardSection .contentBlock {
+	float: left;
+	padding: 0;
+}
+
+.dashboardSection .contentBlock {
+	padding-left: 9rem;
+}
+
+.dashboardSection .contentBlock .inputBox {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.dashboardSection .contentBlock .inputBox select {
+	width: 420px;
+	color: #9cacb7;
+	margin-bottom: 0.5rem;
+}
+
+.dashboardSection .contentBlock .btnWrap {
+	margin-top: 2rem;
+}
+
+.dashboardSection .contentBlock .btnWrap button.blue-btn {
+	text-transform: uppercase;
+}
+
+.tabbingWrap a {
+	font-size: 1.8rem;
+	text-align: center;
+	font-family: OpenSans-regular;
+	padding: 2rem 0;
+	text-transform: uppercase;
+	display: block;
+	color: black;
+	position: relative;
+}
+
+.tabbingWrap a.active:after {
+	position: absolute;
+	content: '';
+	height: 5px;
+	width: 100%;
+	background-color: #ffcb06;
+	bottom: 0;
+	left: 0;
+}
+
+.row.shadowDiv {
+	margin-left: 0;
+}
+
+.sectionDivs {
+	display: none;
+}
+
+.sectionDivs.active {
+	display: block;
+}
+
+.sectionDivs {
+	padding: 3rem;
+	margin-top: 3rem;
+}
+
+.sectionDivs.noStyle {
+	padding: 0;
+}
+
+.document,
+.payment,
+.profile {
+	width: 30%;
+	min-height: 360px;
+	display: inline-block;
+	margin-right: 5rem;
+	vertical-align: top;
+}
+
+.document:last-child,
+.payment:last-child,
+.profile:last-child {
+	margin-right: 0;
+}
+
+.iconWrapper {
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.iconWrapper img {
+	max-width: 60px;
+	width: 100%;
+}
+
+.iconWrapper h4 {
+	font-size: 2rem;
+	font-family: "OpenSans-Bold";
+	padding-top: 2rem;
+}
+
+.dashboardSection ul.listStyle li {
+	position: relative;
+}
+
+.dashboardSection ul.listStyle li a {
+	font-size: 1.4rem;
+	font-family: OpenSans-Light;
+	color: #222d39;
+	padding: 0 5rem 2.5rem 5rem;
+	display: block;
+}
+
+.dashboardSection ul.listStyle li a:after {
+	position: absolute;
+	content: '';
+	border: solid #222d39;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	-ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	right: 35px;
+	top: 10px;
+}
+
+.colsPartTwo {
+	width: 50%;
+	-ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	position: relative;
+}
+
+.whiteBox {
+	border-radius: 6px;
+	box-shadow: 0 2px 15px 0 #81818139;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.whiteBox .contentAmount {
+	padding: 2.5rem 0;
+	text-align: center;
+}
+
+.whiteBox .contentAmount .amtOverdue {
+	font-size: 1.4rem;
+	font-family: "OpenSans-Semibold";
+	color: #222d39;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.whiteBox .contentAmount .number {
+	vertical-align: middle;
+	padding-left: 3rem;
+	font-size: 3.2rem;
+	line-height: 32px;
+	text-align: center;
+	font-family: "OpenSans-xBold";
+	display: inline-block;
+}
+
+.whiteBox .blueSection {
+	background-color: #eefafe;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.whiteBox .blueSection .colpartTwo {
+	padding: 2rem 0;
+	width: 50%;
+	-ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	position: relative;
+}
+
+.whiteBox .blueSection .colpartTwo:first-child:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 1px;
+	height: 40px;
+	top: 12px;
+	background: rgba(156, 172, 183, 0.5);
+	right: 0;
+}
+
+.whiteBox .blueSection .colpartTwo .alignAnchor .linkTabs,
+.whiteBox .blueSection .colpartTwo .alignAnchorOpposite .linkTabs {
+	font-size: 1.4rem;
+	text-align: center;
+	color: #00adef;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.alignAnchor {
+	text-align: end;
+	margin-right: 8rem;
+}
+
+.alignAnchorOpposite {
+	text-align: initial;
+	margin-left: 8rem;
+}
+
+.quickBox {
+	padding: 3rem 7rem; /*991px*/
+}
+
+.quickBox h4 {
+	margin-top: 3rem;
+	font-size: 1.4rem;
+	font-family: "OpenSans-Semibold";
+	color: #222d39;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+
+.mainBoxAccount {
+	width: 200px;
+	min-height: 175px;
+	border: 1px solid #9cacb7;
+	margin-right: 2.5rem;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 6px; /*1199px*/ /*991px*/ /*767px*/ /*575px*/
+}
+
+.mainBoxAccount:last-child {
+	margin-right: 0;
+}
+
+.mainBoxAccount .innerPadding {
+	padding: 4rem 1.2rem;
+	padding-bottom: 1rem; /*1199px*/ /*991px*/
+}
+
+.mainBoxAccount .innerPadding .iconsWrapper {
+	max-width: 64px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center; /*991px*/ /*767px*/ /*575px*/
+}
+
+.mainBoxAccount .innerPadding p.titleBox {
+	font-size: 1.4rem;
+	color: #222d39;
+	text-align: center;
+	margin-top: 2rem;
+	text-transform: uppercase; /*991px*/ /*767px*/
+}
+
+.icon-rupee:before {
+	font-size: 2.2rem;
+	color: #222d39; /*767px*/
+}
+
+p.mobPara {
+	display: none; /*767px*/
+}
+
+.completeBox {
+	display: inline-block;
+	color: #222d39; /*767px*/
+}
+
+.errorImg {
+	display: inline-block;
+	padding: 1rem; /*767px*/
+}
+
+.amtLine {
+	vertical-align: middle;
+	display: inline-block; /*767px*/
+}
+
+.bankDetails {
+	padding: 3.5rem 0;
+	text-align: center; /*575px*/
+}
+
+.bankDetails .statement {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-family: "OpenSans-Semibold";
+	color: #222d39;
+	vertical-align: middle;
+}
+
+.bankDetails p.duration {
+	font-size: 1.4rem;
+	font-family: "OpenSans-regular";
+	color: #4e5b68;
+}
+
+.bankDetails .anchor {
+	padding-top: 1.5rem;
+}
+
+.bankDetails .anchor a.uploadAnchor {
+	font-family: "OpenSans-regular";
+	font-size: 1.4rem;
+	color: #00adef;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.topLine { /*575px*/
+}
+
+.titleMain {
+	color: #222d39;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+	font-family: "OpenSans-Semibold";
+	margin-bottom: 2.7rem;
+}
+
+.loanListViewSection .sectionDivs {
+	padding: 0;
+}
+
+.loanCard {
+	margin-bottom: 3rem; /*991px*/
+}
+
+.loanCard .fundblock {
+	border: 0;
+	position: relative;
+	padding: 2.7rem 8rem; /*991px*/ /*767px*/
+}
+
+.loanCard .fundDetails {
+	background: #fff;
+	position: relative; /*767px*/
+}
+
+.loanCard .fundDetails .divideDiv {
+	display: inline-block;
+	width: 50%;
+	float: left; /*991px*/
+}
+
+.loanCard .fundDetails .divideDiv.fundname .box {
+	width: 50%;
+	text-align: left;
+	padding: 0;
+}
+
+.loanCard .fundDetails .box {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1rem 0 1.5rem;
+	padding: 0 3rem;
+	position: relative;
+	width: 33%;
+	float: left; /*1199px*/ /*767px*/
+}
+
+.loanCard .fundDetails .box:first-child {
+	padding-left: 0;
+}
+
+.loanCard .fundDetails .box:last-child {
+	padding-right: 0;
+}
+
+.loanCard .fundDetails .box.noLB:before {
+	display: none;
+}
+
+.loanCard .fundDetails .box:before {
+	content: '';
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 0.1rem;
+	height: 6.6rem;
+	background: #9cacb7;
+	opacity: 10%; /*1199px*/ /*991px*/ /*767px*/
+}
+
+.loanCard .fundDetails .box:first-of-type:before {
+	display: none;
+}
+
+.loanCard .fundDetails .fundname {
+	min-width: auto;
+	margin-top: 0rem; /*991px*/
+}
+
+.loanCard .fundDetails .fundname span {
+	display: inline-block;
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+	color: #222d39; /*991px*/ /*767px*/ /*575px*/
+}
+
+.loanCard .fundDetails .fundname span.icon-rupee:before {
+	font-size: 2.2rem;
+	font-weight: 900; /*767px*/
+}
+
+.loanCard .fundDetails .fundname .title {
+	padding-left: 0;
+	color: #222d39;
+	font-family: "OpenSans-Semibold";
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 30rem;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 0.5rem; /*1366px*/ /*767px*/
+}
+
+.loanCard .fundDetails p {
+	margin: 0;
+	padding: 0.5rem 0 0.5rem;
+	display: block;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	font-family: "OpenSans-Semibold";
+	color: #222d39; /*767px*/
+}
+
+.loanCard .fundDetails span {
+	display: inline-block;
+	font-size: 1.8rem;
+	line-height: 3.2rem;
+	color: #222d39; /*767px*/ /*575px*/
+}
+
+.loanCard .fundDetails span.icon-rupee:before {
+	font-size: 1.4rem;
+	font-weight: 900; /*767px*/
+}
+
+.loanCard .fundDetails .investValue {
+	padding-left: 0;
+}
+
+.loanCard .fundDetails .amount .invstAmtWrap { /*767px*/
+}
+
+.loanCard .fundDetails .amount .investValue { /*767px*/
+}
+
+.loanCard .accountSec {
+	display: block;
+	margin-bottom: 2rem; /*767px*/
+}
+
+.loanCard .accountSec p {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #222d39;
+	font-family: "OpenSans-Semibold";
+	margin: 0;
+	margin-right: 2rem;
+	display: inline-block; /*767px*/
+}
+
+.loanCard .accountSec p span {
+	margin-left: 0.5rem;
+}
+
+.loanCard .loanStd {
+	font-size: 1.1rem;
+	color: #fff;
+	line-height: 1.4rem;
+	background: #222d39;
+	padding: 1px 1.4rem;
+	position: relative;
+	text-transform: uppercase; /*767px*/ /*767px*/
+}
+
+.loanCard .loanStd:after,
+.loanCard .loanStd:before {
+	position: absolute;
+	bottom: 0;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	border-color: rgba(136, 183, 213, 0);
+	border-width: 9px;
+}
+
+.loanCard .loanStd:before {
+	left: -1px;
+	border-left-color: #fff;
+}
+
+.loanCard .loanStd:after {
+	right: 0;
+	border-right-color: #fff;
+}
+
+.loanCard .stmtBlock {
+	border: 0;
+	position: relative;
+	background: #eefafe;
+}
+
+.loanCard .stmtBlock .stateCont {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	padding: 1.3rem 8rem;
+	position: relative; /*1366px*/ /*991px*/ /*767px*/
+}
+
+.loanCard .stmtBlock .stateCont.bgWhite { /*991px*/
+}
+
+.loanCard .stmtBlock .stateCont:before {
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 0;
+	width: 1px;
+	height: 4.4rem;
+	background: #9cacb7;
+	opacity: 10%; /*991px*/
+}
+
+.loanCard .stmtBlock .stateCont:first-child:before {
+	display: none; /*991px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock {
+	position: relative;
+}
+
+.loanCard .stmtBlock .dueAmtBlock p {
+	margin: 1rem 0;
+	padding-left: 3rem;
+	color: #222d39; /*767px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .rupeeDiv { /*767px*/ /*360px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .icon-rupee {
+	margin-left: 0.5rem; /*767px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .icon-rupee:before {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .blueLink {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-transform: uppercase; /*360px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon {
+	border-radius: 50%;
+	background: green;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: -1px; /*767px*/
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon.error {
+	background: url(../images/error.png) 0 0 no-repeat;
+	background-size: cover;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon.check {
+	background: #86c954;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon.check:before {
+	content: "\e918";
+	font-family: 'icomoon';
+	font-size: 1rem;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 2px;
+	left: 6px; /*767px*/
+}
+
+.loanCard .stmtBlock ul {
+	list-style: none;
+}
+
+.loanCard .stmtBlock ul li {
+	display: inline-block;
+	max-width: 14rem;
+	text-align: center;
+	margin: 0 1rem;
+	position: relative; /*991px*/
+}
+
+.loanCard .blueLink {
+	color: #00adef;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-decoration: underline;
+	font-family: "OpenSans-Semibold"; /*767px*/ /*360px*/
+}
+
+@media screen and (width: 1200px) {
+
+.dashboardSection .contentBlock .inputBox {
+	margin-left: 2rem;
+}
+
+}
+
+@media screen and (width: 360px) {
+
+.completeBox {
+	max-width: 70px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+header .container {
+	width: 98%;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+header .container {
+	width: 98%;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+header .container {
+	width: 98%;
+}
+
+}
+
+@media only screen and (max-width: 1460px) {
+
+.imgBlock {
+	height: 480px;
+}
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+.imgBlock {
+	height: 400px;
+}
+
+.loanCard .fundDetails .fundname .title {
+	max-width: 25rem;
+}
+
+.loanCard .stmtBlock .stateCont {
+	padding: 1.3rem 5rem;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.dashboardSection .imgBlock,
+.dashboardSection .contentBlock {
+	float: none;
+	margin: 0 auto;
+}
+
+.dashboardSection .contentBlock {
+	padding-left: 0;
+	margin: 0 auto;
+}
+
+.dashboardSection .contentBlock .inputBox select {
+	margin-left: 1rem;
+}
+
+.dashboardSection .contentBlock .btnWrap {
+	margin-left: 3rem;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.document,
+.payment,
+.profile {
+	margin-right: 4rem;
+}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+.mainBoxAccount .innerPadding {
+	padding: 4rem 1rem;
+}
+
+.mainBoxAccount {
+	margin-right: 1.5rem;
+	width: 181px;
+}
+
+.loanCard .fundDetails .box {
+	padding: 0 1rem;
+}
+
+.loanCard .fundDetails .box:last-child {
+	text-align: right;
+}
+
+.loanCard .fundDetails .box:nth-child(2) {
+	text-align: center;
+}
+
+.loanCard .fundDetails .box:before {
+	top: 0;
+	left: 0rem;
+	height: 6rem;
+}
+
+}
+
+@media only screen and (max-width: 999px) {
+
+.document,
+.payment,
+.profile {
+	margin-right: 2.5rem;
+}
+
+.iconWrapper h4 {
+	font-size: 1.4rem;
+}
+
+.dashboardSection ul.listStyle li a {
+	font-size: 1.2rem;
+}
+
+.dashboardSection ul.listStyle li a:after {
+	top: 5px;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+.pageWrapper {
+	padding-top: 12rem;
+}
+
+.inputBox {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+header {
+	position: absolute;
+}
+
+.mainHeader {
+	padding: 1rem 0;
+}
+
+.mainHeader .topHeader {
+	position: unset;
+}
+
+.mainHeader .topHeader .hamburgerPanel {
+	padding: 1rem 0;
+}
+
+.mainHeader .topHeader .hamburgerPanel .hamburgerBox {
+	margin-top: 0;
+	top: 3px;
+	z-index: 2;
+}
+
+.mainHeader .topHeader .logoPanel {
+	padding: 0;
+}
+
+.imgBlock {
+	height: 333px;
+	background-size: cover;
+	background-position: center top;
+}
+
+.imgBlock .imgContent {
+	top: 61px;
+	left: 30px;
+}
+
+.contentBlock {
+	padding: 0rem 2rem 1rem 2rem;
+}
+
+.quickBox {
+	padding: 2rem;
+}
+
+.mainBoxAccount .innerPadding .iconsWrapper {
+	max-width: 50px;
+}
+
+.mainBoxAccount .innerPadding p.titleBox {
+	font-size: 1.2rem;
+}
+
+.mainBoxAccount .innerPadding {
+	padding: 2rem 1rem;
+}
+
+.mainBoxAccount {
+	max-width: 150px;
+	min-height: 160px;
+	margin-right: 1rem;
+}
+
+.loanCard {
+	margin-bottom: 2.4rem;
+}
+
+.loanCard .fundblock {
+	padding: 1.5rem 3rem;
+}
+
+.loanCard .fundDetails .divideDiv {
+	width: 100%;
+	float: none;
+}
+
+.loanCard .fundDetails .box:before {
+	left: 0;
+	top: 0;
+	height: 5.8rem;
+}
+
+.loanCard .fundDetails .fundname {
+	border-bottom: 0;
+}
+
+.loanCard .fundDetails .fundname span {
+	font-size: 2.8rem;
+}
+
+.loanCard .stmtBlock .stateCont {
+	padding: 1.3rem 3rem;
+	width: 100%;
+}
+
+.loanCard .stmtBlock .stateCont.bgWhite {
+	background: #fff;
+}
+
+.loanCard .stmtBlock .stateCont:before {
+	width: 100%;
+	height: 0.5px;
+	top: 0;
+}
+
+.loanCard .stmtBlock .stateCont:first-child:before {
+	display: block;
+}
+
+.loanCard .stmtBlock ul li {
+	margin: 0;
+	max-width: none;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+.loanCard .stmtBlock ul li:after {
+	content: '';
+	height: 14px;
+	width: 1px;
+	background: #979797;
+	opacity: 10%;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.loanCard .stmtBlock ul li:first-child {
+	text-align: left;
+}
+
+.loanCard .stmtBlock ul li:last-child:after {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 991px) {
+
+.dashboardSection .contentBlock {
+	margin-left: 7rem;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.dashboardSection .contentBlock .btnWrap {
+	margin-left: 0;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+p {
+	font-size: 1.4rem;
+}
+
+.inputBox {
+	margin-top: 2rem;
+}
+
+.inputBox input,
+.inputBox textarea,
+.inputBox select {
+	font-size: 1.4rem;
+	height: 48px;
+}
+
+.inputBox label {
+	font-size: 1.4rem;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox.labelUp label {
+	font-size: 1rem;
+}
+
+p.orDiv {
+	margin: 1.5rem 0;
+}
+
+.document,
+.payment,
+.profile {
+	width: 100%;
+	margin-bottom: 2rem;
+	min-height: 300px;
+}
+
+.dashboardSection ul.listStyle li a {
+	font-size: 1.4rem;
+}
+
+.mainBoxAccount .innerPadding .iconsWrapper {
+	max-width: 45px;
+}
+
+.mainBoxAccount .innerPadding p.titleBox {
+	display: none;
+}
+
+.mainBoxAccount {
+	min-height: 93px;
+	max-width: 100px;
+	margin-right: 0;
+}
+
+.icon-rupee:before {
+	font-size: 1.2rem;
+}
+
+p.mobPara {
+	font-size: 1.2rem;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	max-width: 60px;
+	color: #222d39;
+}
+
+.completeBox {
+	display: inline-block;
+	max-width: 100px;
+	vertical-align: top;
+	margin-right: 1rem;
+	text-align: center;
+}
+
+.errorImg {
+	padding: 0.5rem;
+}
+
+.amtLine {
+	display: block;
+}
+
+.loanCard .fundblock {
+	padding: 1.5rem 1.6rem;
+}
+
+.loanCard .fundDetails {
+	display: block;
+	padding: 0;
+}
+
+.loanCard .fundDetails .box:first-child,
+.loanCard .fundDetails .box:last-child {
+	padding: 0;
+}
+
+.loanCard .fundDetails .box:before {
+	height: 2.8rem;
+}
+
+.loanCard .fundDetails .fundname span.icon-rupee:before {
+	font-size: 1.5rem;
+}
+
+.loanCard .fundDetails .fundname span {
+	font-size: 2rem;
+	line-height: 2.4rem;
+}
+
+.loanCard .fundDetails .fundname .title {
+	max-width: 13rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	margin-bottom: 0;
+}
+
+.loanCard .fundDetails p {
+	display: inline-block;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+
+.loanCard .fundDetails span.icon-rupee:before {
+	font-size: 1rem;
+}
+
+.loanCard .fundDetails span {
+	display: inline-block;
+	padding-bottom: 0;
+	text-align: right;
+	font-size: 1.4rem;
+}
+
+.loanCard .fundDetails .amount .invstAmtWrap {
+	display: inline-block;
+	width: 100%;
+	float: none;
+	text-align: right;
+}
+
+.loanCard .fundDetails .amount .investValue {
+	width: auto;
+}
+
+.loanCard .accountSec {
+	margin-bottom: 1.5rem;
+}
+
+.loanCard .accountSec p {
+	display: block;
+}
+
+.loanCard .loanStd {
+	padding: 0.2rem 0.5rem 0.2rem 1.5rem;
+	display: inline-block;
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+
+.loanCard .loanStd:after {
+	display: none;
+}
+
+.loanCard .loanStd {
+	font-size: 1rem;
+}
+
+.loanCard .stmtBlock .stateCont {
+	padding: 0.8rem 1.6rem;
+}
+
+.loanCard .stmtBlock .dueAmtBlock p {
+	margin: 0;
+	font-size: 1.2rem;
+	padding-left: 1.8rem;
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .rupeeDiv {
+	font-size: 1.4rem;
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .icon-rupee {
+	margin-left: 3px;
+}
+
+.loanCard .stmtBlock .dueAmtBlock p .icon-rupee:before {
+	font-size: 1rem;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon.check:before {
+	font-size: 7px;
+	top: -1px;
+	left: 4px;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .icon {
+	width: 16px;
+	height: 16px;
+	top: 2px;
+}
+
+.loanCard .blueLink {
+	font-size: 1.2rem;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+.upperTabSection ul li {
+	font-size: 1.2rem;
+	padding-right: 1rem;
+}
+
+.upperTabSection ul li:last-child {
+	display: none;
+}
+
+.dashboardSection .imgBlock {
+	display: none;
+}
+
+.dashboardSection .contentBlock {
+	margin: 0;
+}
+
+.dashboardSection .contentBlock .inputBox select {
+	width: 100%;
+	margin-left: 0;
+}
+
+.dashboardSection .contentBlock .btnWrap {
+	text-align: center;
+}
+
+.tabbingWrap a {
+	font-size: 1.4rem;
+	padding: 1.3rem 0;
+}
+
+.whiteBox .contentAmount {
+	padding: 1rem 0;
+}
+
+.whiteBox .contentAmount .amtOverdue {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.whiteBox .contentAmount .number {
+	padding-left: 0;
+	line-height: 14px;
+	font-size: 1.4rem;
+	display: block;
+}
+
+.whiteBox .blueSection .colpartTwo {
+	padding: 1rem 0;
+}
+
+.whiteBox .blueSection .colpartTwo:first-child:after {
+	top: 9px;
+	height: 20px;
+}
+
+.whiteBox .blueSection .colpartTwo .alignAnchor .linkTabs,
+.whiteBox .blueSection .colpartTwo .alignAnchorOpposite .linkTabs {
+	font-size: 1.2rem;
+}
+
+.alignAnchor {
+	margin-right: 4rem;
+}
+
+.alignAnchorOpposite {
+	margin-left: 4rem;
+}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+.inputBox {
+	margin-top: 1rem;
+}
+
+.mainHeader .topHeader .hamburgerPanel {
+	padding: 0;
+	margin: 1rem 0 0.5rem 0;
+}
+
+.mainHeader .topHeader .hamburgerPanel .hamburgerBox {
+	margin-left: 0;
+	margin-right: 8px;
+}
+
+.mainHeader .topHeader .logoPanel {
+	width: auto;
+	max-width: 13rem;
+	margin: 1rem 0 0.5rem 0;
+}
+
+.mainBoxAccount .innerPadding .iconsWrapper {
+	max-width: 30px;
+}
+
+.mainBoxAccount {
+	min-height: 80px;
+	max-width: 60px;
+}
+
+.bankDetails {
+	padding: 2.5rem 2rem;
+}
+
+.topLine {
+	margin-bottom: 1rem;
+}
+
+.loanCard .fundDetails .fundname span {
+	font-size: 1.8rem;
+	line-height: 2rem;
+}
+
+.loanCard .fundDetails span {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+}
+
+@media screen and (max-width: 520px) {
+
+.completeBox {
+	max-width: 65px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.dashboardSection .contentBlock .btnWrap button.blue-btn {
+	min-width: 200px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+.completeBox {
+	margin-right: 0.5rem;
+}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+.loanCard .stmtBlock .dueAmtBlock p .rupeeDiv {
+	font-size: 1.2rem;
+}
+
+.loanCard .stmtBlock .dueAmtBlock .blueLink {
+	font-size: 1.1rem;
+}
+
+.loanCard .blueLink {
+	font-size: 1rem;
+}
+
+}
+
+@media screen and (max-width: 359px) {
+
+.completeBox {
+	margin-right: 1px;
+	max-width: 60px;
+	vertical-align: top;
+}
+
+}
+
+.full-width {
+	width: 100%;
+}
+
