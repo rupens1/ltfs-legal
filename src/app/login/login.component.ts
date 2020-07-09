@@ -52,26 +52,14 @@ export class LoginComponent implements OnInit {
           case 'VIEWER':
             return this.router.navigate(['viewer-dashboard']);
           default:
+            alert('We couldn\'t Verify your identity please check your creds and try again')
             return this.router.navigate(['login'])
         }
+      }, err => {
+        console.error(err)
+        alert('Something went wrong please try again')
       })
 
-    // const { userName, password } = this.loginForm.value
-
-    // this.loginDataService.userInfo = this.loginForm.value;
-    // if (userName === users.ADMIN && password === users.PASSWORD) {
-    //   return this.router.navigate(['checker-dashboard'])
-    // }
-
-    // if (userName === users.USER && password === users.PASSWORD) {
-    //   return this.router.navigate(['dashboard'])
-    // }
-
-    // if (userName === users.VIEWER && password === users.PASSWORD) {
-    //   return this.router.navigate(['viewer-dashboard'])
-    // }
-
-    alert('Unknown user')
   }
 
 }

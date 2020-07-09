@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openRoutes = ['/', '/login', '/dashboard', '/viewer-dashboard', '/checker-dashboard']
+  openRoutes = ['/dashboard', '/viewer-dashboard', '/checker-dashboard']
 
   lastLogin = new Date()
 
@@ -24,8 +24,8 @@ export class HeaderComponent implements OnInit {
     return this.loginDataService.userInfo.userName === 'admin'
   }
   isLoggedIn() {
-    return true
-    // return !this.openRoutes.find(openRoute => openRoute === this.router.url)
+    // return true // temporary header for logout display
+    return !this.openRoutes.find(openRoute => openRoute === this.router.url)
   }
 
   getReportLink() {
