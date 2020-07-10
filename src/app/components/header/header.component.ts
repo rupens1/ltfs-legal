@@ -19,13 +19,10 @@ export class HeaderComponent implements OnInit {
 
   lastLogin = new Date()
 
-  isAdmin() {
-    // console.log(this.loginDataService.userInfo)
-    return this.loginDataService.userInfo.userName === 'admin'
-  }
+  custName =  this.loginDataService.userInfo.custName
+
   isLoggedIn() {
-    // return true // temporary header for logout display
-    return !this.openRoutes.find(openRoute => openRoute === this.router.url)
+    return this.openRoutes.find(openRoute => openRoute === this.router.url) && this.loginDataService.userInfo.token
   }
 
   getReportLink() {

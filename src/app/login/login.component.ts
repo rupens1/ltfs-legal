@@ -25,15 +25,30 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  navigateUser(role: string): Promise<boolean> {
+    switch (role) {
+      case 'CHECKER':
+        return this.router.navigate(['checker-dashboard']);
+      case 'MAKER':
+          return this.router.navigate(['dashboard']);
+      case 'VIEWER':
+        return this.router.navigate(['viewer-dashboard']);
+      default:
+        alert('We couldn\'t Verify your identity please check your creds and try again')
+        return this.router.navigate(['login'])
+    }
+  }
+
   login() {
     console.log(this.loginForm)
     if (this.loginForm.invalid) {
       return alert('Invalid login credentials. Please check again')
     }
 
+    const reqId =  Math.floor(1000 + Math.random()*9000)
     const payload = {
       ...this.loginForm.value,
-      reqId: Math.floor(1000 + Math.random()*9000)
+      reqId,
     }
 
     const requestOpt = {
@@ -44,17 +59,10 @@ export class LoginComponent implements OnInit {
     this.request.makeRequest(payload, requestOpt, 'post')
       .subscribe(res => {
         this.loginDataService.userInfo = res
-        switch (res.role) {
-          case 'CHECKER':
-            return this.router.navigate(['checker-dashboard']);
-          case 'MAKER':
-              return this.router.navigate(['dashboard']);
-          case 'VIEWER':
-            return this.router.navigate(['viewer-dashboard']);
-          default:
-            alert('We couldn\'t Verify your identity please check your creds and try again')
-            return this.router.navigate(['login'])
+        if (res.token && res.status === 200 && reqId ===  res.reqId) {
+          return this.navigateUser(res.role)
         }
+        
       }, err => {
         console.error(err)
         alert('Something went wrong please try again')

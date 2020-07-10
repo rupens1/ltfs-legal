@@ -15,8 +15,8 @@
           </div>
         </div>
         <div *ngIf="isLoggedIn()" class="right-header">
-          <p class="login-details">Welcome Rupen</p>
-          <p class="login-details">Last Login Details: {{lastLogin | date: 'dd-mm-yyyy'}}</p>
+          <p class="login-details">Welcome {{custName}}</p>
+          <p class="login-details">Last Login Details: {{lastLogin | date: 'dd-MM-yyyy'}}</p>
           <a [routerLink]="['/login']">
             <div class="logout">
               <img src="assets/images/logout.svg" class="logout-image" />
